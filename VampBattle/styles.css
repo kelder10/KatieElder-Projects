@@ -1,0 +1,101 @@
+/* Katie Elder, 12/13/2024 */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('graveyard.png'); /* Background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the image */
+    text-align: center;
+    margin: 0; 
+}
+    
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+h1 {
+    color: whitesmoke;
+    font-size: 1.7em; /* Title size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    margin-bottom: 5px; /* Space below title */
+}
+        
+#message, #turn {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+    
+#stats {
+    display: flex;
+    justify-content: space-around; /* Align characters side-by-side */
+    margin: 20px 0;
+    width: 100%; 
+    font-size: 16px;
+
+}
+    
+#vampire-stats, #slayer-stats {
+    background-color: rgba(229, 226, 226, 0.242); /* Slightly transparent white background */
+    border: 1px solid #0a090a98;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.801); 
+    width: 45%; /* Set width for stats */
+}
+    
+#vampire-image, #slayer-image {
+    width: 100px; 
+    height: auto; 
+}
+    
+#vampire-buttons, #slayer-buttons {
+    margin-top: 4px; /* Space above buttons */
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.84); /* Button background color */
+    color: black; /* Button text color */
+    border: none; 
+    border-radius: 5px; 
+}
+
+button:hover {
+    background-color: #810404db; /* Shade on hover */
+}
+
+button:disabled {
+    background-color: #ccc; /* Disabled button color */
+    cursor: not-allowed; /* Change cursor for disabled buttons */
+}
+
+/* Defense and attack display */
+#vampire-defense-display, #slayer-defense-display,
+#vampire-attack-display, #slayer-attack-display {
+    margin-top: 8px; /* Space above stats */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    #stats {
+        flex-direction: column; /* Stack characters on smaller screens */
+        align-items: center; /* Center align items */
+    }
+    
+    #vampire-stats, #slayer-stats {
+        width: 80%; /* Make stats section responsive */
+    }
+    
+    button {
+        width: 90%; /* Make buttons responsive */
+        font-size: 14px; 
+    }
+}
+      
+

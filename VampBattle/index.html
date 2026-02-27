@@ -1,1 +1,53 @@
+<!-- Katie Elder, 12/13/2024 -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Vampire Battle Game</title>
+    </head>
+
+    <body>
+        <h1>Vampire Battle Game</h1>
+        <p id="turn"></p> <!-- Display whose turn it is -->
+        <p id="message"></p> <!-- Display messages for actions -->
+
+        <div id="stats">
+            <div id="vampire-stats">
+                <img src="vampire.png" alt="Vampire" id="vampire-image">
+
+                <h2>Vampire Stats</h2>
+                <p><strong>HP: <span id="vampire-hp">100</span></strong></p>
+                <p>ATK: <span id="vampire-attack-display">10</span></p>
+                <p>DEF: <span id="vampire-defense-display">7</span></p>
+
+                <h3>Vampire Actions</h3>
+                <button id="vampire-attack" onclick="playerAction('vampire', 'attack')">Attack</button>
+                <button id="vampire-defense" onclick="playerAction('vampire', 'defend')">Defend</button>
+                <button id="vampire-heal" onclick="playerAction('vampire', 'heal')">Heal</button>
+                <button id="vampire-give-up" onclick="playerAction('vampire', 'run away')">Run Away</button>
+            </div>
+
+            <div id="slayer-stats">
+                <img src="vampireslayer.png" alt="Vampire Slayer" id="slayer-image">
+
+                <h2>Vampire Slayer Stats</h2>
+                <p><strong>HP: <span id="slayer-hp">90</span></strong></p>
+                <p>ATK: <span id="slayer-attack-display">12</span></p>
+                <p>DEF: <span id="slayer-defense-display">5</span></p>
+
+                <h3>Slayer Actions</h3>
+                <button id="slayer-attack" onclick="playerAction('slayer', 'attack')">Attack</button>
+                <button id="slayer-defense" onclick="playerAction('slayer', 'defend')">Defend</button>
+                <button id="slayer-magic" onclick="playerAction('slayer', 'magic')">Use Holy Water</button>
+                <button id="slayer-heal" onclick="playerAction('slayer', 'heal')">Heal</button>
+                <button id="slayer-give-up" onclick="playerAction('slayer', 'run away')">Run Away</button>
+            </div>
+        </div>
+        
+            <script src="script.js"></script>
+    </body>
+</html>
 
