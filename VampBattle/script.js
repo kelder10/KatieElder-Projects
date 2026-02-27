@@ -6,6 +6,21 @@ const vampireAttackPower = 10;
 const slayerAttackPower = 12;
 let vampireDefense = 0; 
 let slayerDefense = 0; 
+let musicStarted = false;
+
+function playerAction(player, action) {
+    // START MUSIC LOGIC
+    const music = document.getElementById('bg-music');
+    if (!musicStarted) {
+        music.play().catch(error => {
+            console.log("Autoplay was prevented. Music will start on next click.");
+        });
+        musicStarted = true;
+    }
+    // END MUSIC LOGIC
+
+    let message = '';
+    let damage = 0;
 
 function updateStats() {
     document.getElementById('vampire-hp').innerText = vampireHP;
@@ -94,23 +109,6 @@ function playerAction(player, action)
     }
 }
 
-// Add this variable at the top of your script with the other lets
-let musicStarted = false;
-
-function playerAction(player, action) {
-    // START MUSIC LOGIC
-    const music = document.getElementById('bg-music');
-    if (!musicStarted) {
-        music.play().catch(error => {
-            console.log("Autoplay was prevented. Music will start on next click.");
-        });
-        musicStarted = true;
-    }
-    // END MUSIC LOGIC
-
-    let message = '';
-    let damage = 0;
-    // ... rest of your existing function code ...
     
 function disableAllButtons() {
 const allButtons = document.querySelectorAll('button');
