@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Trinity Elder</h1>
+    <nav>
+        <a href="resume.html">Resume</a>
+        <a href="cover-letter.html">Cover Letter</a>
+        <a href="career-goals.html">Career Goals</a>
+    </nav>
+</header>
+
+<main>
+
+<section>
+    <h2>Cover Letter</h2>
+
+    <p><span>Dear Hiring Manager,</span></p>
+
+    <p>I am excited to apply for this position...</p>
+
+    <p><strong>Sincerely,</strong><br>Trinity Elder</p>
+
+    <mark>Available immediately</mark>
+</section>
+
+<div id="date"></div>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Trinity Elder</p>
+</footer>
+
+</body>
+</html>
