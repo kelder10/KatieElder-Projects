@@ -1,0 +1,34 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Trinity Elder</h1>
+    <nav>
+        <a href="resume.html">Resume</a>
+        <a href="cover-letter.html">Cover Letter</a>
+        <a href="career-goals.html">Career Goals</a>
+    </nav>
+</header>
+
+<section>
+    <h2>My Career Goals</h2>
+
+    <img src="image.jpg" width="300">
+
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+
+    <video width="320" controls>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+</section>
